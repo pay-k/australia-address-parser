@@ -20,10 +20,10 @@ stages:
           versionSpec: '10.x'
         displayName: 'Install Node.js'
       - task: PublishPipelineArtifact@1
-          inputs:
-            targetPath: '$(Build.SourcesDirectory)'
-            artifact: 'drop'
-            publishLocation: 'pipeline'
+        inputs:
+          targetPath: '$(Build.SourcesDirectory)'
+          artifact: 'drop'
+          publishLocation: 'pipeline'
       - script: |
           npm install
           npm run build
