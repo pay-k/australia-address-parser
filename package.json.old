@@ -1,0 +1,60 @@
+{
+  "_from": "australia-address-parser",
+  "_id": "australia-address-parser@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-CqZjX90d7zRIYnKfFRVO7HnZRgAAx3QkAzFtIeNQF5BBg/NB9NYzrCR+EOS1xF9rzMkauFpM8KeQkCzCn/pJ+w==",
+  "_location": "/australia-address-parser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "australia-address-parser",
+    "name": "australia-address-parser",
+    "escapedName": "australia-address-parser",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/australia-address-parser/-/australia-address-parser-1.0.1.tgz",
+  "_shasum": "c1b0d125e7e30d541f7518980cefd3b0d2e45ea2",
+  "_spec": "australia-address-parser",
+  "_where": "/Users/danshapir/repos/kyc-service/src/kyc-calculator",
+  "author": {
+    "name": "Gordon Lam",
+    "url": "https://github.com/gordonlkc"
+  },
+  "bugs": {
+    "url": "https://github.com/gordonlkc/australia-address-parser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "xregexp": "^3.1.1"
+  },
+  "deprecated": false,
+  "description": "Australia Street Address Parser",
+  "devDependencies": {
+    "uglifyjs": "^2.4.11"
+  },
+  "homepage": "https://github.com/gordonlkc/australia-address-parser#readme",
+  "keywords": [
+    "australia",
+    "address",
+    "parser"
+  ],
+  "license": "ISC",
+  "main": "parser.js",
+  "name": "australia-address-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordonlkc/australia-address-parser.git"
+  },
+  "scripts": {
+    "build": "browserify parser.js --standalone australiaAddressParser | uglifyjs -mc > australiaAddressParser.min.js",
+    "test": "node test"
+  },
+  "version": "1.0.1"
+}
