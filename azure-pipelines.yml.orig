@@ -20,6 +20,7 @@ stages:
           versionSpec: '10.x'
         displayName: 'Install Node.js'
       - task: PublishPipelineArtifact@1
+<<<<<<< HEAD
           inputs:
             targetPath: '$(Build.SourcesDirectory)'
             artifact: 'drop'
@@ -28,6 +29,17 @@ stages:
           npm install
           npm run build
           npm run test
+        displayName: 'npm install and build'
+=======
+        inputs:
+          targetPath: '$(Build.SourcesDirectory)'
+          artifact: 'drop'
+          publishLocation: 'pipeline'
+      #- script: |
+      #    npm install
+      #    npm run build
+      #  displayName: 'npm install and build'
+>>>>>>> 9b5072b93d83f3be98682aee824710b8f885e44c
 
       # - script: |
       #     npm run test-juint
