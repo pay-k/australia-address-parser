@@ -485,7 +485,7 @@
     Quay:'QY',
     Ramble: 'RMBL',
     Road:'RD',
-    Ridge:'RDG',
+    Ridge:'RDGE',
     Roadway:'RDY',
     Reserve:'RES',
     Rise:'RI',
