@@ -2,7 +2,7 @@ var parser = require('./parser');
 var assert = require('assert');
 
 var address = {
-    '1 Darling Island Road, Pyrmont NSW 2009':{
+    '8 The Eyire, Pyrmont NSW 2009':{
         streetNumber: '1',
         streetName: 'Darling Island',
         streetType: 'Road',
